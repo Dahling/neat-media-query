@@ -1,4 +1,23 @@
 @import url(vendors/bootstrap/bootstrap.css);
+.paragraph-styles, h2 {
+  font-size: 30px;
+  color: red; }
+
+.neat-row2 {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+  @media only screen and (min-width: 800px) {
+    .neat-row2 {
+      width: calc(50% - 60px);
+      float: left;
+      margin-left: 40px; } }
+  @media only screen and (min-width: 800px) and (min-width: 1000px) {
+    .neat-row2.neat-row2 {
+      width: calc(33.33333% - 53.33333px);
+      float: left;
+      margin-left: 40px; } }
+
 .main {
   height: 100%;
   width: 98%;
