@@ -1,8 +1,34 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
 
 }
 
+$my-custom-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: 1200px,
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
 
 .main {
   height: 100%;
@@ -21,7 +47,7 @@
   background-position: right;
 }
 
-#circle {
+.circle {
   border-radius: 50%;
   background-color: #4bc6df;
   width: 50px;
@@ -41,11 +67,69 @@
 
 }
 
-.main-article {
-  background-color: blackn;
+.sub {
+  border-top: 1px solid blue;
+  background-color: #f2f2f2;
   color: gray;
+  height: 194px;
+  position: relative;
+}
+
+.pic {
+  // height: 125px;
+  // width: 100%;
+  position: static;
+  z-index: 0;
+  visibility: visible;
+  display: block;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.first-sub {
+  display: block;
+  float: right;
 
 }
+
+
+.second-sub {
+  display: block;
+  float: right;
+
+}
+
+
+.third-sub {
+  display: block;
+  float: right;
+
+}
+
+.main-article {
+  color: gray;
+}
+
+#main-title {
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+
+
+#dude  {
+  width: 100%;
+  position: static;
+  z-index: 0;
+  visibility: visible;
+  display: block;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+
 .second-nav {
   float: left;
 }
@@ -88,14 +172,6 @@ li {
   margin: auto;
 }
 
-#dude  {
-  width: 100%;
-  height: auto;
-  position: static;
-  z-index: 0;
-  visibility: visible;
-  display: block;
-}
 
 .clearfix:after {
   content: "";
